@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 62.5%;
+}
+.productlist{
+    position: absolute;
+    width: 100vw;
+    height: 80rem;
+    border: 2px solid black;
+    top: 30%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* gap: 12px; */
+}
+.Item{
+   width: 30rem;
+   height: 15rem;
+   border: 2px solid black; 
+}
+.itemImage{
+    width:10rem ;
+    height:10rem;
+}
