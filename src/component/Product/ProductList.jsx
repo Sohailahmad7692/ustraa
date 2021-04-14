@@ -16,22 +16,27 @@ const ProductList = (props) => {
      },[props.itemId])
     return (
         <>
-        {/* <div className="d-flex flex-column border border-dark"> */}
-         <div className="productlist ">
+         <div className="productlist d-flex flex-wrap ">
              {
                  productArray.map((arr,i)=>{
                      if(!value){
                          if(i<3){
                         return(
-                            <div className="Item d-flex flex-row border border-dark justify-content-between align-items-center m-1">
-                                <img className="itemImage" src={arr.image_urls.x120} alt=""/>
-                                <div className="content d-flex flex-column ">
-                                   <div className="productName">
+                            <div className="Item d-flex flex-row justify-content-between  m-1">
+                                <img className="itemImage mt-4" src={arr.image_urls.x120} alt=""/>
+                                <div className="content d-flex flex-column mt-4">
+                                   <div className="productName text-uppercase">
                                        <h5>{arr.name}</h5>
                                    </div>
                                    <p className="productQuantity">{arr.weight}{arr.weight_unit}</p>
-                                   <h3 className="productPrice">&#8377;{arr.price}</h3>
-                                   <button className="btn btn-primary">ADD TO CART</button>
+                                   <div>
+                                   <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
+                                    <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
+                                       </div>
+                                   {
+                                      arr.is_in_stock ? <button className="btn btn-primary">ADD TO CART</button> :
+                                      <button className="btn btn-secondary" disabled>Out Of Stock</button> 
+                                   }
                                 </div>
                                 <div className="rating">
                                    <p>4.2 &#9734;</p>
@@ -41,15 +46,22 @@ const ProductList = (props) => {
                          }
                      } else{
                         return(
-                            <div className="Item d-flex flex-row border border-dark justify-content-between align-items-center m-1">
-                                <img className="itemImage" src={arr.image_urls.x120} alt=""/>
-                                <div className="content d-flex flex-column ">
+                            <div className="Item d-flex flex-row justify-content-between m-1">
+                                <img className="itemImage mt-4" src={arr.image_urls.x120} alt=""/>
+                                <div className="content d-flex flex-column mt-4">
                                    <div className="productName">
                                        <h5>{arr.name}</h5>
                                    </div>
                                    <p className="productQuantity">{arr.weight}{arr.weight_unit}</p>
-                                   <h3 className="productPrice">&#8377;{arr.price}</h3>
-                                   <button className="btn btn-primary">ADD TO CART</button>
+                                   <div>
+                                   <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
+                                    <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
+                                       </div>
+                                   
+                                   {
+                                      arr.is_in_stock ? <button className="btn btn-primary">ADD TO CART</button> :
+                                      <button className="btn btn-secondary" disabled>Out Of Stock</button> 
+                                   }
                                 </div>
                                 <div className="rating">
                                    <p>4.2 &#9734;</p>
@@ -60,12 +72,10 @@ const ProductList = (props) => {
                     
                 })
                  }
-                 <div className="viewbutton">
-                    {  !value ? <button onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[+] view More</button>: <button onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[-] view less</button>}
-                 </div>
                  </div> 
-                 
-            {/* </div> */}
+                 <div className="viewbutton">
+                    {  !value ? <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[+] View More</button>: <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[-] View less</button>}
+                 </div>
             </>  
              
         

@@ -7,18 +7,44 @@ html{
   font: 62.5%;
 }
 .horizontal-scroll{
-  position: absolute;
-  width: 80rem;
+  /* position: absolute; */
+  width: 80vw;
+  /* width: 60%; */
   height: 7rem;
   /* border: 2px solid black; */
   display: flex;
   flex-direction: row;
+  overflow-x:auto;
   left: 15%;
-  top: 15%;
+  margin-left:auto;
+  margin-right:auto;
+
+  /* top: 15%; */
 }
 .eachCategory{
-    width: 10rem;
+    min-width: 10rem;
     height: 5rem;
     border: 2px solid black;
 }
+.eachCategory:hover{
+  opacity: 0.5;
+}
+.eachCategory:hover{
+  cursor: pointer;
+}
+.change ul li:hover{
+    /* list-style: none; */
+    cursor: pointer;
+}
+@media screen and (max-width:960) {
+  html{
+    font: 40%;
+  } 
+}
+@media screen and (max-width:450) {
+  html{
+    font: 40%;
+  } 
+}
+
 
