@@ -4,27 +4,27 @@
   box-sizing: border-box;
 }
 html{
-  font: 62.5%;
+  /* font-size: 62.5%; */
+    /* font: 62.5%; */
 }
 .horizontal-scroll{
-  /* position: absolute; */
   width: 80vw;
+  
   /* width: 60%; */
-  height: 7rem;
-  /* border: 2px solid black; */
+  height: 8rem;
   display: flex;
   flex-direction: row;
   overflow-x:auto;
   left: 15%;
   margin-left:auto;
   margin-right:auto;
-
-  /* top: 15%; */
 }
 .eachCategory{
-    min-width: 10rem;
+    min-width: 12rem;
     height: 5rem;
-    border: 2px solid black;
+    border: 3px solid rgb(218, 212, 212);
+    border-radius: 8px;
+    font-size: 10rem;
 }
 .eachCategory:hover{
   opacity: 0.5;
@@ -33,18 +33,17 @@ html{
   cursor: pointer;
 }
 .change ul li:hover{
-    /* list-style: none; */
     cursor: pointer;
 }
-@media screen and (max-width:960) {
+ /* @media screen and (max-width:960) { 
   html{
-    font: 40%;
+    font-size: 62.5%;
   } 
 }
 @media screen and (max-width:450) {
   html{
-    font: 40%;
+    font-size: 40%;
   } 
-}
+}  */
 
 

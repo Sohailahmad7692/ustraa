@@ -16,19 +16,19 @@ const ProductList = (props) => {
      },[props.itemId])
     return (
         <>
-         <div className="productlist d-flex flex-wrap ">
+         <div className="productlist d-flex flex-wrap m-4">
              {
                  productArray.map((arr,i)=>{
                      if(!value){
                          if(i<3){
                         return(
-                            <div className="Item d-flex flex-row justify-content-between  m-1">
+                            <div className="Item d-flex flex-row justify-content-between m-1">
                                 <img className="itemImage mt-4" src={arr.image_urls.x120} alt=""/>
                                 <div className="content d-flex flex-column mt-4">
                                    <div className="productName">
                                        <h5 >{arr.name}</h5>
                                    </div>
-                                   <p className="productQuantity">{arr.weight}{arr.weight_unit}</p>
+                                   <p className="productQuantity">{arr.weight} {arr.weight_unit}</p>
                                    <div>
                                    <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
                                     <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
@@ -38,8 +38,8 @@ const ProductList = (props) => {
                                       <button className="btn btn-secondary" disabled>Out Of Stock</button> 
                                    }
                                 </div>
-                                <div className="rating">
-                                   <p>4.2 &#9734;</p>
+                                <div className="rating mt-4 mr-2">
+                                   <p>4.2 &#9733;</p>
                                 </div>
                             </div>  
                         )
@@ -52,7 +52,7 @@ const ProductList = (props) => {
                                    <div className="productName">
                                        <h5>{arr.name}</h5>
                                    </div>
-                                   <p className="productQuantity">{arr.weight}{arr.weight_unit}</p>
+                                   <p className="productQuantity">{arr.weight} {arr.weight_unit}</p>
                                    <div>
                                    <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
                                     <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
@@ -63,8 +63,8 @@ const ProductList = (props) => {
                                       <button className="btn btn-secondary" disabled>Out Of Stock</button> 
                                    }
                                 </div>
-                                <div className="rating">
-                                   <p>4.2 &#9734;</p>
+                                <div className="rating mt-4 mr-2">
+                                   <p>4.2 &#9733;</p>
                                 </div>
                             </div>  
                         )
@@ -73,6 +73,7 @@ const ProductList = (props) => {
                 })
                  }
                  </div> 
+                 <br/>
                  <div className="viewbutton">
                     {  !value ? <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[+] View More</button>: <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[-] View less</button>}
                  </div>
