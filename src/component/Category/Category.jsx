@@ -34,7 +34,8 @@ console.log(categoryId)
                     return (
                         <div className="eachCategory text-center pt-3 " style={{}} key={i} onClick={()=>{setcategoryid(arr.category_id)}} style={{backgroundImage: `url(${arr.category_image})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}}>
                            <h5 className="text-white text-uppercase">{arr.category_name}</h5>
-                       </div>)
+                       </div>
+                       )
                 }
             })}
             <div className="eachCategory text-center pt-3"><h5 className="text-black">View All</h5></div>

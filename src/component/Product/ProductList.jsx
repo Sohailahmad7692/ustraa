@@ -25,8 +25,8 @@ const ProductList = (props) => {
                             <div className="Item d-flex flex-row justify-content-between  m-1">
                                 <img className="itemImage mt-4" src={arr.image_urls.x120} alt=""/>
                                 <div className="content d-flex flex-column mt-4">
-                                   <div className="productName text-uppercase">
-                                       <h5>{arr.name}</h5>
+                                   <div className="productName">
+                                       <h5 >{arr.name}</h5>
                                    </div>
                                    <p className="productQuantity">{arr.weight}{arr.weight_unit}</p>
                                    <div>
