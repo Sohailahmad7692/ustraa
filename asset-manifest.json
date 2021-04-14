@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ustraa/static/css/main.940df542.chunk.css",
+    "main.js": "/ustraa/static/js/main.a5ed5b17.chunk.js",
+    "main.js.map": "/ustraa/static/js/main.a5ed5b17.chunk.js.map",
+    "runtime-main.js": "/ustraa/static/js/runtime-main.0301cd0b.js",
+    "runtime-main.js.map": "/ustraa/static/js/runtime-main.0301cd0b.js.map",
+    "static/css/2.0ab35af0.chunk.css": "/ustraa/static/css/2.0ab35af0.chunk.css",
+    "static/js/2.f01ae849.chunk.js": "/ustraa/static/js/2.f01ae849.chunk.js",
+    "static/js/2.f01ae849.chunk.js.map": "/ustraa/static/js/2.f01ae849.chunk.js.map",
+    "static/js/3.e7e7f91b.chunk.js": "/ustraa/static/js/3.e7e7f91b.chunk.js",
+    "static/js/3.e7e7f91b.chunk.js.map": "/ustraa/static/js/3.e7e7f91b.chunk.js.map",
+    "index.html": "/ustraa/index.html",
+    "static/css/2.0ab35af0.chunk.css.map": "/ustraa/static/css/2.0ab35af0.chunk.css.map",
+    "static/css/main.940df542.chunk.css.map": "/ustraa/static/css/main.940df542.chunk.css.map",
+    "static/js/2.f01ae849.chunk.js.LICENSE.txt": "/ustraa/static/js/2.f01ae849.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0301cd0b.js",
+    "static/css/2.0ab35af0.chunk.css",
+    "static/js/2.f01ae849.chunk.js",
+    "static/css/main.940df542.chunk.css",
+    "static/js/main.a5ed5b17.chunk.js"
+  ]
+}
