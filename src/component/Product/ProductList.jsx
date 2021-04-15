@@ -28,18 +28,18 @@ const ProductList = (props) => {
                                    <div className="productName">
                                        <h5 >{arr.name}</h5>
                                    </div>
-                                   <p className="productQuantity">{arr.weight} {arr.weight_unit}</p>
+                                   <p className="productQuantity">({arr.weight} {arr.weight_unit})</p>
                                    <div>
                                    <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
                                     <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
                                        </div>
                                    {
-                                      arr.is_in_stock ? <button className="btn btn-primary">ADD TO CART</button> :
+                                      arr.is_in_stock ? <button className="btn btn-success">ADD TO CART</button> :
                                       <button className="btn btn-secondary" disabled>Out Of Stock</button> 
                                    }
                                 </div>
                                 <div className="rating mt-4 mr-2">
-                                   <p>4.2 &#9733;</p>
+                                {arr.rating?<p>{arr.rating} &#9733;</p>:null}
                                 </div>
                             </div>  
                         )
@@ -52,19 +52,19 @@ const ProductList = (props) => {
                                    <div className="productName">
                                        <h5>{arr.name}</h5>
                                    </div>
-                                   <p className="productQuantity">{arr.weight} {arr.weight_unit}</p>
+                                   <p className="productQuantity">({arr.weight} {arr.weight_unit})</p>
                                    <div>
                                    <span className="productPrice fs-3">&#8377;{arr.final_price} </span>
                                     <span className="productPrice text-decoration-line-through fs-5"> &#8377;{arr.price}</span>
                                        </div>
                                    
                                    {
-                                      arr.is_in_stock ? <button className="btn btn-primary">ADD TO CART</button> :
+                                      arr.is_in_stock ? <button className="btn btn-success">ADD TO CART</button> :
                                       <button className="btn btn-secondary" disabled>Out Of Stock</button> 
                                    }
                                 </div>
                                 <div className="rating mt-4 mr-2">
-                                   <p>4.2 &#9733;</p>
+                                   {arr.rating?<p>{arr.rating} &#9733;</p>:null}
                                 </div>
                             </div>  
                         )
