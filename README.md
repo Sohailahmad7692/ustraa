@@ -10,8 +10,10 @@ on terminal :create-react-app --version
 
 ## To Start Server:
 On terminal make sure you are on the the project folder eg:root/ustraa
+
 npm start
 
 ## To Visit App:
 On browser visit the below link
+
 localhost:3000
