@@ -9,9 +9,8 @@ npm install -g create-react-app
 on terminal :create-react-app --version
 
 ## For node modules(npm) file
- On terminal make sure you are on the the project folder eg:root/ustraa
+ On terminal : npm install
  
- npm install
 ## To Start Server:
 On terminal make sure you are on the the project folder eg:root/ustraa
 
