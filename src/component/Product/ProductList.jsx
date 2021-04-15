@@ -16,7 +16,7 @@ const ProductList = (props) => {
      },[props.itemId])
     return (
         <>
-         <div className="productlist d-flex flex-wrap m-4">
+         <div className="productlist d-flex flex-wrap ml-5 mt-4">
              {
                  productArray.map((arr,i)=>{
                      if(!value){

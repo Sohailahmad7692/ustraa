@@ -5,16 +5,26 @@ import ProductList from "../Product/ProductList"
 
 const Category = () => {
     let [categoryArray,setcategoryArray]=useState([])
-    const [categoryId,setcategoryid]=useState(185) 
-console.log(categoryId)
+    const [categoryId,setcategoryid]=useState(185)
+    const [errorhandling,seterrorhandling]=useState(false)
     useEffect(() => {
        let endpoint=`https://backend.ustraa.com/rest/V1/api/homemenucategories/v1.0.1?device_type=mob`
        fetch(endpoint)
        .then((res)=>res.json())
        .then((data)=>{
            setcategoryArray(data.category_list)
-       })
+       }).catch((e)=>{
+        console.log(e)
+        seterrorhandling(true)
+    })
     },[])
+    if(errorhandling){
+        return (
+            <div class="alert alert-danger" role="alert">
+             error occur in fetching the api
+            </div>
+        )
+    }
     return (
         <div className="d-flex flex-column align-items-center ">
             <div className="horizontal-scroll ">
@@ -35,8 +45,7 @@ console.log(categoryId)
             <div className="eachCategory text-center pt-3 m-1"><h5 className="text-black">View All</h5></div>
             </div>
             <ProductList itemId={categoryId}/> 
-            <br/>
-            <div class="dropdown dropup change">
+            <div class="dropdown dropup change m-3">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Change
                 </button>

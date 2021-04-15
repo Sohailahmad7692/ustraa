@@ -35,15 +35,15 @@ html{
 .change ul li:hover{
     cursor: pointer;
 }
- /* @media screen and (max-width:960) { 
+ @media screen and (max-width:960px) { 
   html{
-    font-size: 62.5%;
+    font-size: 12px;
   } 
 }
-@media screen and (max-width:450) {
+@media screen and (max-width:450px) {
   html{
-    font-size: 40%;
+    font-size: 10px;
   } 
-}  */
+} 
 
 
