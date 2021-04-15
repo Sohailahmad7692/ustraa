@@ -8,7 +8,7 @@ npm install -g create-react-app
 ### To check you have suceesfully installed the react..
 on terminal :create-react-app --version
 
-## Before starting the server
+## For node modules(npm) file
  On terminal make sure you are on the the project folder eg:root/ustraa
  
  npm install
