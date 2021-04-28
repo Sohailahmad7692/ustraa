@@ -11,7 +11,6 @@ const ProductList = (props) => {
         .then((res)=>res.json())
         .then((data)=>{
             setproductArray(data.products)
-            console.log(data.products)
         })
      },[props.itemId])
     return (
@@ -75,7 +74,7 @@ const ProductList = (props) => {
                  </div> 
                  <br/>
                  <div className="viewbutton">
-                    {  !value ? <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[+] View More</button>: <button className="btn btn-light" onClick={()=>{if(!value){setValue(1)} else{setValue(0)}}}>[-] View less</button>}
+                    {  !value ? <button className="btn btn-light" onClick={()=>{setValue(1)} }>[+] View More</button>: <button className="btn btn-light" onClick={()=>{setValue(0)}}>[-] View less</button>}
                  </div>
             </>  
              

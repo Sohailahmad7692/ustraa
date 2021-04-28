@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media screen and (max-width:960) {
+/* @media screen and (max-width:960) {
   html{
     font: 50%;
   } 
@@ -20,5 +20,5 @@ code {
   html{
     font: 50%;
   } 
-}
+} */
 

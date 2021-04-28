@@ -36,7 +36,7 @@ const Category = () => {
                </div>)
                 } else{
                     return (
-                        <div className="eachCategory text-center pt-3 m-1 " style={{}} key={i} onClick={()=>{setcategoryid(arr.category_id)}} style={{backgroundImage: `url(${arr.category_image})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}}>
+                        <div className="eachCategory text-center pt-3 m-1 " key={i} onClick={()=>{setcategoryid(arr.category_id)}} style={{backgroundImage: `url(${arr.category_image})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}}>
                            <h5 className="text-white text-uppercase">{arr.category_name}</h5>
                        </div>
                        )

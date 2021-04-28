@@ -3,14 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  /* font-size: 62.5%; */
-    /* font: 62.5%; */
-}
+
 .horizontal-scroll{
   width: 80vw;
-  
-  /* width: 60%; */
   height: 8rem;
   display: flex;
   flex-direction: row;
